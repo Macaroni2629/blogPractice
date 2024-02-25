@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Create New Blog Post</h1>
+
+    <!-- Submitting this form will send a POST request to "/createPost" -->
+    <form method="POST" action="/createPost">
+      <!-- Title input -->
+      <label for="title">Title: </label></br>
+      <input name="title" value=""></input>
+      </br>
+
+      <!-- Subtitle input -->
+      <label for="subtitle">Subtitle: </label></br>
+      <input name="subtitle" value=""></input>
+      </br>
+
+      <!-- Post body input -->
+      <label for="body">Content: </label></br>
+      <textarea name="body" value=""></textarea>
+      </br>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

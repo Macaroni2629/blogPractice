@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Edit Blog Post</h1>
+
+    <!-- Submitting this form will send a POST request to "/editPost/POST_ID" -->
+    <form method="POST" action="/editPost/<%= post.id %>">
+      <!-- Title input -->
+      <label for="title">Title: </label></br>
+      <input name="title" value="<%= post.title %>"></input>
+      </br>
+
+      <!-- Subtitle input -->
+      <label for="subtitle">Subtitle: </label></br>
+      <input name="subtitle" value="<%= post.subtitle %>"></input>
+      </br>
+
+      <!-- Post body input -->
+      <label for="body">Content: </label></br>
+      <textarea name="body"><%= post.body %></textarea>
+      </br>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

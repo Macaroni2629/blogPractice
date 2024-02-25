@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1><%= post.title %></h1>
+    <h2><%= post.subtitle %></h2>
+    <p><%= post.body %></p>
+    <a href="/editPost/<%= post.id %>">Edit</a>
+
+    <!-- NEW: Add form to delete current post -->
+    <form action="/deletePost/<%= post.id %>" method="post">
+      <button class="delete" type="submit">Delete</button>
+    </form>
+
+  </body>
+</html>

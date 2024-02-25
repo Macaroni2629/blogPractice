@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Posts</title>
+  </head>
+
+  <body>
+    <h1>All Blog Posts</h1>
+
+    <!-- Add a paragraph for each post in provided array of posts -->
+    <% for (let i = 0; i < posts.length; i++) { %>  
+      <!-- UPDATED: link to /viewPost/id -->
+      <a href=<%= "/viewPost/" + posts[i].id %>>
+        <%= posts[i].title %>
+      </a> 
+      </br>
+    <% } %>
+  </body>
+
+</html>
